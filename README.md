@@ -25,10 +25,10 @@ MarkToBlue applies the following steps to each image:
 2. **Mask generation**: Identify pixels above a user-defined threshold in both channels.  
 3. **Area calculation**: Count the number of non-zero (or above-threshold) pixels in each channel.  
 4. **Brightness calculation**: Compute the mean pixel intensity (within each mask).  
-5. **Ratio computation**:  
-   \[
-   \text{MarkToBlue Ratio} = \frac{\text{Area}_{\text{green}} \times \text{Brightness}_{\text{green}}}{\text{Area}_{\text{blue}} \times \text{Brightness}_{\text{blue}}}
-   \]
+5. **Ratio computation**:
+
+MarkToBlue Ratio = (Area_green × Brightness_green) / (Area_blue × Brightness_blue)
+
 
 This ratio provides a comparative measure of marker signal relative to a baseline or nuclear stain.
 
